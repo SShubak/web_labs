@@ -1,0 +1,30 @@
+<main class="main">
+  <form class="form" [formGroup]="form" (submit)="submit()">
+
+    <h1>Registration</h1>
+    <label>
+      <input formControlName="firstName" id="firstName" placeholder="Enter firstName" required>
+    </label>
+
+    <label>
+      <input formControlName="lastName" id="lastName" placeholder="Enter lastName" required>
+    </label>
+
+    <label>
+      <input formControlName="login" id="login" placeholder="Enter login" required>
+    </label>
+
+    <label>
+      <input formControlName="password" id="password" type="password" placeholder="Enter password" required>
+    </label>
+
+    <label>
+      <input formControlName="rpassword" id="repeat-password" type="password" placeholder="Repeat password" required>
+    </label>
+
+
+    <button class="submit-btn">Create account</button>
+
+  </form>
+  <a routerLinkActive="active" routerLink="/login" class="login_button">Already have an account? - Sign in!</a>
+</main>

@@ -1,0 +1,26 @@
+.navbar {
+  background-color: #c3b38e;
+
+  width: 100vw;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.link_button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000FF;
+  transition-duration: 0.5s;
+  border-bottom: none;
+  padding-bottom: 0;
+  &:hover {
+    color: black;
+    padding-bottom: 5px;
+    transform: scale(1.1);
+    border-bottom: 2px solid black;
+  }
+}

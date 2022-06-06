@@ -1,0 +1,23 @@
+<main class="main">
+  <form [formGroup]="form" (submit)="submit()" class="form">
+    <h1>{{user.login}}</h1>
+
+    <label>
+      <input formControlName="firstName" id="firstName" placeholder="Enter name">
+    </label>
+
+    <label>
+      <input formControlName="lastName" id="lastName" placeholder="Enter surname">
+    </label>
+
+    <label>
+      <input formControlName="password" id="password" placeholder="Enter password">
+    </label>
+
+    <label>
+      <input formControlName="rpassword" id="repeat-password" placeholder="Repeat password">
+    </label>
+
+    <button class="button submit-btn">Save</button>
+  </form>
+</main>

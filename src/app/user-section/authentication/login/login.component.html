@@ -1,0 +1,16 @@
+<main class="main">
+  <form class="form" [formGroup]="form" (submit)="submit()">
+    <h1>Sign in</h1>
+    <div>
+      <label>
+        <input formControlName="login" id="login" placeholder="Enter login" required>
+      </label>
+      <label>
+        <input formControlName="password" type="password" id="password" placeholder="Enter password">
+      </label>
+      <button type="submit" class="submit-btn">Log in</button>
+
+    </div>
+  </form>
+  <a routerLinkActive="active" routerLink="/registration"  class="sign_button">Don't have an account? - Sign up!</a>
+</main>

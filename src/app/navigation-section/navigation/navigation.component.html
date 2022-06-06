@@ -1,0 +1,8 @@
+<nav class="navbar"
+     *ngIf="isUserLoggedIn"
+>
+  <a routerLinkActive="active" routerLink="/profile" class="link_button">My account</a>
+  <a routerLinkActive="active" routerLink="/my-orders" class="link_button">My orders</a>
+  <a routerLinkActive="active" routerLink="/store" class="link_button">Medicine store</a>
+  <a routerLinkActive="active" (click)="logout()" class="link_button">Logout</a>
+</nav>

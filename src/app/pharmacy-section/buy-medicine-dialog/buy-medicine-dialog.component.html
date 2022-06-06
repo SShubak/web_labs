@@ -1,0 +1,18 @@
+<div class="info">
+  <span>Info:</span>
+  <div class="info-description">
+    <p>Name: {{data.name}}</p>
+    <p>Manufacturer: {{data.manufacturer}}</p>
+    <p>Price: {{data.price}}</p>
+    <p>In stock number: {{data.in_stock_number}}</p>
+  </div>
+</div>
+<hr>
+<mat-form-field>
+  <mat-label>Favorite food</mat-label>
+  <input matInput placeholder="Amount" type="number" value="" #amount>
+</mat-form-field>
+
+<button mat-flat-button color="accent" (click)="buyMedicine()">Купити</button>
+
+

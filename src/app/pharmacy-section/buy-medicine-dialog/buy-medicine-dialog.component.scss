@@ -1,0 +1,16 @@
+:host{
+  display: flex;
+  flex-direction: column;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  span{
+    font-size: 26px;
+    color: #e38ae3;
+  }
+  .info-description{
+    padding-left: 20px;
+  }
+}
