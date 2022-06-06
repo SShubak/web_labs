@@ -8,9 +8,7 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="login.html" class="link_button">Login</a>
-    <a href="#" class="link_button">Logout</a>
-    <a href="account-reg.html" class="link_button">Sign up</a>
+    <a href="#" class="link_button logout">Logout</a>
     <a href="account.html" class="link_button">Account</a>
 </nav>
 <main class="main">
@@ -18,18 +16,14 @@
         <img src="../image/logo.png" alt="site logo" class="logo">
         <h1>Your profile</h1>
         <div>
-            <h2>General Info</h2>
-            <p>username:   </p>
-            <p>first name:   </p>
-            <p>last name:   </p>
-        </div>
-        <div>
-            <h2>Contact Info</h2>
-            <p>email:     </p>
-            <p>number:    </p>
+            <p>login: <span id="firstName"></span></p>
+            <p>first name: <span id="lastName"></span></p>
+            <p>last name: <span id="login"></span></p>
         </div>
         <a href="account-edit.html" class="edit_button">Edit account</a>
     </form>
 </main>
+
+<script type="module" src="../scripts/account.js"></script>
 </body>
 </html>

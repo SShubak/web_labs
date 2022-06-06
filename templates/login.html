@@ -9,9 +9,7 @@
 <body>
 <nav class="navbar">
     <a href="login.html" class="link_button">Login</a>
-    <a href="login.html" class="link_button">Logout</a>
     <a href="account-reg.html" class="link_button">Sign up</a>
-    <a href="account-edit.html" class="link_button">Account</a>
 </nav>
 <main class="main">
 
@@ -19,20 +17,19 @@
         <h1>Sign in</h1>
         <div>
             <label>
-                <input placeholder="Enter username" required>
+                <input id="login" placeholder="Enter login" required>
             </label>
             <label>
-                <input placeholder="Enter password" required>
+                <input id="password" type="password" placeholder="Enter password" required>
             </label>
-            <div>
-                <a href="account.html">
-                </a>
-                <button>login</button>
-            </div>
+            <button type="submit" class="submit-btn">Log in</button>
 
         </div>
     </form>
     <a href="account-reg.html" class="sign_button">Don't have an account? - Sign up!</a>
 </main>
+
+
+<script type="module" src="../scripts/login.js"></script>
 </body>
 </html>

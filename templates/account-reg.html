@@ -9,9 +9,7 @@
 <body>
 <nav class="navbar">
     <a href="login.html" class="link_button">Login</a>
-    <a href="#" class="link_button">Logout</a>
     <a href="account-reg.html" class="link_button">Sign up</a>
-    <a href="account.html" class="link_button">Account</a>
 </nav>
 
 <main class="main">
@@ -20,39 +18,37 @@
         <h1>Registration</h1>
         <div>
             <label>
-                <input placeholder="Enter username" required>
+                <input id="firstName" placeholder="Enter firstName" required>
             </label>
         </div>
         <div>
             <label>
-                <input placeholder="Enter email" required>
+                <input id="lastName" placeholder="Enter lastName" required>
             </label>
         </div>
         <div>
             <label>
-                <input placeholder="Enter password" required>
+                <input id="login" placeholder="Enter login" required>
             </label>
         </div>
         <div>
             <label>
-                <input placeholder="Repeat password" required>
+                <input id="password" type="password" placeholder="Enter password" required>
             </label>
         </div>
         <div>
             <label>
-                <select class="select-role">
-                    <option>Admin</option>
-                    <option>Buyer</option>
-                </select>
+                <input  id="repeat-password" type="password" placeholder="Repeat password" required>
             </label>
         </div>
 
-        <div>
-            <a href="account.html" class="button"> </a>
-            <button>Create account</button>
-        </div>
+        <button class="submit-btn">Create account</button>
+
     </form>
     <a href="login.html" class="login_button">Already have an account? - Sign in!</a>
 </main>
+
+
+<script type="module" src="../scripts/account-reg.js"></script>
 </body>
 </html>
